@@ -3,8 +3,8 @@ Gem::Specification.new do |spec|
   spec.version       = "0.0.1"
   spec.authors       = ["Mitch Dempsey"]
   spec.email         = ["mrdempsey@gmail.com"]
-  spec.description   = %q{Adds a Lita handler to provide access to xkcd comics}
-  spec.summary       = %q{Adds a Lita handler to provide access to xkcd comics}
+  spec.description   = %q{Adds a Lita handler to provide access to xkcd comics.}
+  spec.summary       = %q{Adds a Lita handler to provide access to xkcd comics.}
   spec.homepage      = "https://github.com/webdestroya/lita-excuses"
   spec.license       = "MIT"
 
