@@ -1,11 +1,11 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-xkcd"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["Mitch Dempsey"]
   spec.email         = ["mrdempsey@gmail.com"]
   spec.description   = %q{Adds a Lita handler to provide access to xkcd comics.}
   spec.summary       = %q{Adds a Lita handler to provide access to xkcd comics.}
-  spec.homepage      = "https://github.com/webdestroya/lita-excuses"
+  spec.homepage      = "https://github.com/webdestroya/lita-xkcd"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
