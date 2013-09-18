@@ -3,10 +3,10 @@ require "lita"
 module Lita
   module Handlers
     class Xkcd < Handler
-      route %r{xkcd random}i, :xkcd_random, command: true, help: { "xkcd random" => "A random XKCD comic." }
-      route %r{xkcd ([0-9]+)}i, :xkcd_num, command: true, help: { "xkcd <num>" => "The XKCD comic <num>" }
+      route %r{^xkcd random$}i, :xkcd_random, command: true, help: { "xkcd random" => "A random XKCD comic." }
+      route %r{^xkcd ([0-9]+)$}i, :xkcd_num, command: true, help: { "xkcd <num>" => "The XKCD comic <num>" }
 
-      route %r{xkcd(| latest)$}i, :xkcd_latest, command: true, help: { "xkcd [latest]" => "The latest XKCD comic." }
+      route %r{^xkcd(| latest)$}i, :xkcd_latest, command: true, help: { "xkcd [latest]" => "The latest XKCD comic." }
       
 
       def xkcd_latest(response)

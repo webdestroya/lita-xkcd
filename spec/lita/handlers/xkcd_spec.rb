@@ -9,4 +9,6 @@ describe Lita::Handlers::Xkcd, lita_handler: true do
 
   it { routes_command("xkcd random").to(:xkcd_random) }
   it { doesnt_route_command("xkcd random").to(:xkcd_latest) }
+
+  it { doesnt_route_command("help xkcd").to(:xkcd_latest) }
 end
