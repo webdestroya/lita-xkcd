@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-xkcd"
-  spec.version       = "0.0.3"
+  spec.version       = "0.0.4"
   spec.authors       = ["Mitch Dempsey"]
   spec.email         = ["mrdempsey@gmail.com"]
   spec.description   = %q{Adds a Lita handler to provide access to xkcd comics.}
@@ -21,4 +21,6 @@ Gem::Specification.new do |spec|
   
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "coveralls"
+
+  spec.metadata = { "lita_plugin_type" => "handler" }
 end
