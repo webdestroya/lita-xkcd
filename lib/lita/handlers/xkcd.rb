@@ -61,7 +61,7 @@ module Lita
       end
 
       def print_comic(comic)
-        "#{comic['title']}: #{comic['alt']} (#{comic['img']})"
+        comic.values_at('title', 'img', 'alt')
       end
 
 
