@@ -16,7 +16,7 @@ module Lita
 
         response.reply print_comic(MultiJson.load(resp.body))
       rescue
-        reponse.reply error
+        response.reply error
       end
 
       def xkcd_num(response)
@@ -40,7 +40,7 @@ module Lita
 
         response.reply load_comic(comic_num)
       rescue
-        reponse.reply error
+        response.reply error
       end
 
       private
