@@ -10,7 +10,7 @@ module Lita
       
 
       def xkcd_latest(response)
-        resp = http.get('http://xkcd.com/info.0.json')
+        resp = http.get('https://xkcd.com/info.0.json')
 
         raise 'Not found' if resp.status == 404
 
@@ -28,7 +28,7 @@ module Lita
       end
 
       def xkcd_random(response)
-        resp = http.get('http://xkcd.com/info.0.json')
+        resp = http.get('https://xkcd.com/info.0.json')
 
         if resp.status == 200
           obj = MultiJson.load(resp.body)
@@ -50,7 +50,7 @@ module Lita
       end
 
       def load_comic(comic_num)
-        resp = http.get("http://xkcd.com/#{comic_num}/info.0.json")
+        resp = http.get("https://xkcd.com/#{comic_num}/info.0.json")
 
         if resp.status == 404
           response.reply "Comic ##{comic_num} not found."
